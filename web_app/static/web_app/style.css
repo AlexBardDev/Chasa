@@ -1,0 +1,37 @@
+body
+{
+	background-color: black;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+
+header
+{
+	margin-bottom: 56px;
+}
+.navbar-brand
+{
+	font-weight: bold;
+	margin-left: 100px;
+}
+
+#menu .nav-link, #menu .nav-item:visited
+{
+	color: black;
+	margin-right: 50px;
+}
+
+#menu .nav-link:hover
+{
+	color: white;
+}
+
+/* Footer */
+
+footer
+{
+	background-color: blue;
+	height: 50px;
+}

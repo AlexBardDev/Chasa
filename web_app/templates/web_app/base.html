@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Bootstrap and CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="{% static 'web_app/style.css' %}"/>
+		
+		<!-- Font -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+		<title>{% block title %}{% endblock %}</title>
+	</head>
+
+	<body>
+		<!-- Header with navigation -->
+		<header>
+			<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+				<a class="navbar-brand" href="{% url 'home' %}">CHASA</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'events' %}">Sorties Club</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Qui sommes-nous ?</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="{% url 'about' %}">Le Club</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="{% url 'about' %}">Les membres</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+								<div class="dropdown-header">Réseaux sociaux</div>
+								<a class="dropdown-item" href="https://www.facebook.com/groups/676636575698457/" target="_blank">Facebook</a>
+								<div class="dropdown-divider"></div>
+								<div class="dropdown-header">Direct</div>
+								<a class="dropdown-item" href="mailto:jacques.degreves@gmail.com">E-mail</a>
+								<a class="dropdown-item" href="#">Téléphone</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>	
+
+		<!-- Content of the web page -->
+		{% block content %}{% endblock %}
+
+		<!-- Footer -->
+		<footer class="container-fluid" id="footer">
+			<div class="text-center">
+				<p>Site web du Chasa.</p>
+			</div>
+		</footer>
+    
+		<!-- Boostrap, jQuery and JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="{% static 'web_app/script.js' %}"></script>
+	</body>
+<html>
