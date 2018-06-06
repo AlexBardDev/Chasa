@@ -11,6 +11,9 @@
 		<!-- Font -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="{% static 'web_app/Images/favicon.ico' %}">
+
 		<title>{% block title %}{% endblock %}</title>
 	</head>
 
@@ -18,7 +21,10 @@
 		<!-- Header with navigation -->
 		<header>
 			<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
-				<a class="navbar-brand" href="{% url 'home' %}">CHASA</a>
+				<a class="navbar-brand" href="{% url 'home' %}">
+					<img src="{% static 'web_app/Images/logo.png' %}" alt="Logo">
+				</a>
+
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -43,13 +49,32 @@
 								<div class="dropdown-divider"></div>
 								<div class="dropdown-header">Direct</div>
 								<a class="dropdown-item" href="mailto:jacques.degreves@gmail.com">E-mail</a>
-								<a class="dropdown-item" href="#">Téléphone</a>
+								<button type="button" class="dropdown-item" data-toggle="modal" data-target="#modal">Téléphone</button>
 							</div>
 						</li>
 					</ul>
 				</div>
 			</nav>
-		</header>	
+		</header>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title">Informations de contact du Chasa :</h3>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						Vous pouvez contacter le Président du Club au XXX ou par mail à XXX.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 
 		<!-- Content of the web page -->
 		{% block content %}{% endblock %}
