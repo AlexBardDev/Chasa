@@ -1,0 +1,81 @@
+body
+{
+	background-color: black;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+
+header
+{
+	margin-bottom: 76px;
+}
+.navbar-brand
+{
+	font-weight: bold;
+	margin-left: 100px;
+}
+
+#menu .nav-link, #menu .nav-item:visited
+{
+	color: black;
+	margin-right: 50px;
+}
+
+#menu .nav-link:hover
+{
+	color: white;
+}
+
+/* Modal */
+
+#modal
+{
+	color: black;
+}
+
+/* Home */
+
+#home
+{
+	background-color: rgb(50, 255, 00);
+	min-height: 500px;
+}
+
+h2
+{
+	margin-top: 76px;
+	margin-bottom: 30px;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+/* Events */
+
+#events
+{
+	background-color: rgb(51, 146, 255);
+	min-height: 600px;
+}
+
+table
+{
+	color: black;
+}
+
+/* About */
+
+#about
+{
+	background-color: rgb(0, 0, 255);
+	min-height: 600px;
+}
+
+/* Footer */
+
+footer
+{
+	background-color: black;
+	height: 50px;
+}
