@@ -1,4 +1,5 @@
 {% extends "web_app/base.html"%}
+{% load static %}
 
 {% block title %}A propos du Chasa{% endblock %}
 
@@ -26,8 +27,45 @@
 		</div>
 
 		<div class="row">
-			<div class="offset-md-2 col-md-8">
-				pass if comité: display data
+			<div class="offset-md-2 col-md-4">
+				<figure class="text-center" >
+					<img src="{% static 'web_app/Images/president.jpg' %}" width="125" height="190" alt="Photo du Président">
+					<figcaption>Le <strong>Président</strong> : <em>Jacques Degrèves</em></figcaption>
+				</figure>
+			</div>
+			<div class="col-md-4">
+				<figure class="text-center" >
+					<img src="{% static 'web_app/Images/vice_president.jpg' %}" width="125" height="190" alt="Photo du Vice-Président">
+					<figcaption>Le <strong>Vice-Président</strong> : <em>Guilio Lombardo</em></figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="row">
+			<div class="offset-md-2 col-md-4">
+				<figure class="text-center" >
+					<img src="{% static 'web_app/Images/treasurer.jpg' %}" width="125" height="190" alt="Photo du Trésorier">
+					<figcaption>Le <strong>Trésorier</strong> : <em>Vincent Bardiaux</em></figcaption>
+				</figure>
+			</div>
+			<div class="col-md-4">
+				<figure class="text-center" >
+					<img src="{% static 'web_app/Images/secretary.jpg' %}" width="125" height="190" alt="Photo de la Secrétaire">
+					<figcaption>La <strong>Secrétaire</strong> : <em>Stéphanie Matten</em></figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="row">
+			<div class="offset-md-2 col-md-4">
+				<figure class="text-center" >
+					<img src="{% static 'web_app/Images/kevin.jpg' %}" width="125" height="190" alt="Photo de Kevin">
+					<figcaption>Le <strong>Comié des fêtes</strong> : <em>Kevin Nalinne</em></figcaption>
+				</figure>
+			</div>
+			<div class="col-md-4">
+				<figure class="text-center" >
+					<img src="{% static 'web_app/Images/sarah.jpg' %}" width="125" height="190" alt="Photo de Sarah">
+					<figcaption>Le <strong>Comité des fêtes</strong> : <em>Stéphanie Matten</em></figcaption>
+				</figure>
 			</div>
 		</div>
 	</section>
