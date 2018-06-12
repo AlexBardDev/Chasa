@@ -20,26 +20,23 @@
 	<body>
 		<!-- Header with navigation -->
 		<header>
-			<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+			<nav class="navbar navbar-expand-lg fixed-top">
 				<a class="navbar-brand" href="{% url 'home' %}">
 					<img src="{% static 'web_app/Images/logo.png' %}" alt="Logo">
 				</a>
-
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="menu">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
+							<a class="nav-link" href="{% url 'home' %}">Accueil</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="{% url 'events' %}">Sorties Club</a>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Qui sommes-nous ?</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="{% url 'about' %}#club">Le Club</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="{% url 'about' %}#members">Les membres</a>
-							</div>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'about' %}" >Qui sommes-nous ?</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
@@ -82,7 +79,7 @@
 		<!-- Footer -->
 		<footer class="container-fluid" id="footer">
 			<div class="text-center">
-				<p>Site web du Chasa.</p>
+				<p><a href="{% url 'home' %}">Site web du Chasa.</a></p>
 			</div>
 		</footer>
     
