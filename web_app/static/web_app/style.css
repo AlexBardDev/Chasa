@@ -64,6 +64,11 @@ header
 	font-style: italic;
 }
 
+#home div:last-child
+{
+	padding-bottom: 50px;
+}
+
 /* Events */
 
 #events
@@ -137,4 +142,24 @@ footer a, footer a:visited
 footer a:hover
 {
 	color: white;
+}
+
+/* Media Queries */
+
+@media all and (max-width: 576px)
+{
+	.navbar-brand
+	{
+		margin-left: 0px;
+	}
+
+	.bottom-page
+	{
+		margin-bottom: 0px;
+	}
+
+	#about
+	{
+		padding-bottom: 50px;
+	}
 }
