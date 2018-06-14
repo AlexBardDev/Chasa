@@ -4,41 +4,39 @@
 
 {% block content %}
 	<section class="container-fluid" id="events">
-		<div class="row">
-			<h2 class="offset-md-2 col-md-8">Vous trouverez ci-dessous toutes les sorties du Chasa :</h2>
-		</div>
-		
-		<div class="table-responsive">
-			<table class="table table-light table-striped table-bordered table-hover">
-				<thead class="thead-dark">
-					<tr>
-						<th scope="col">#</th>
-						<th scope="col">First</th>
-						<th scope="col">Last</th>
-						<th scope="col">Handle</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">1</th>
-						<td>Mark</td>
-						<td>Otto</td>
-						<td>@mdo</td>
-					</tr>
-					<tr>
-						<th scope="row">2</th>
-						<td>Jacob</td>
-						<td>Thornton</td>
-						<td>@fat</td>
-					</tr>
-					<tr>
-						<th scope="row">3</th>
-						<td>Larry</td>
-						<td>the Bird</td>
-						<td>@twitter</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+		{% if dives %}
+			<div class="row">
+				<h2 class="offset-md-2 col-md-8">Vous trouverez ci-dessous toutes les sorties du Chasa :</h2>
+			</div>
+
+			<div class="table-responsive">
+				<table class="table table-light table-striped table-bordered table-hover">
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">Date</th>
+							<th scope="col">Lieu</th>
+							<th scope="col">Présence</th>
+							<th scope="col">Responsable</th>
+							<th scope="col">Informations supplémentaires</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for dive in dives %}
+						<tr>
+							<td>{{ dive.date|date:"l" }} {{ dive.date }}</td>
+							<td>{{ dive.place }}</td>
+							<td>{{ dive.date|date:"H" }}:{{ dive.date|date:"i"}}</td>
+							<td>{{ dive.person }}</td>
+							<td>{{ dive.extra_infos }}</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		{% else %}
+			<div class="row">
+				<h2 class="offset-md-2 col-md-8">Il n'y a aucune sorties prévues pour le moment.</h2>
+			</div>
+		{% endif %}
 	</section>
 {% endblock %}
