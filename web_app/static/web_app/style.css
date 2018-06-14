@@ -77,6 +77,14 @@ header
 	min-height: 600px;
 }
 
+#events h2
+{
+	text-decoration: underline;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-weight: bold;
+}
+
 table
 {
 	color: black;
