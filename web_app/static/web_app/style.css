@@ -54,13 +54,15 @@ header
 #home a, #home a:visited
 {
 	color: white;
+	font-style: italic;
+	font-weight: bold;
 }
 
 #home h2
 {
 	margin-top: 76px;
 	margin-bottom: 30px;
-	text-decoration: underline;
+	font-weight: bold;
 	font-style: italic;
 }
 
@@ -79,7 +81,6 @@ header
 
 #events h2
 {
-	text-decoration: underline;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	font-weight: bold;
@@ -101,16 +102,22 @@ table
 
 #about h2
 {
-	text-decoration: underline;
 	margin-top: 50px;
 	font-weight: bold;
 }
 
 #about h3
 {
-	text-decoration: underline;
+	font-weight: bold;
+	font-style: italic;
 	margin-top: 25px;
 	margin-bottom: 20px;
+}
+
+#AccordionOne div, #AccordionTwo div .offset-sm-2
+{
+	border-top: 2px solid black;
+	padding-top : 20px;
 }
 
 figure

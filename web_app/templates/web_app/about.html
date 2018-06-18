@@ -10,10 +10,10 @@
 		</div>
 
 		<div class="row">
-			<h3 class="offset-sm-2 col-sm-8">Le Club</h3>
+			<a class="offset-sm-2 col-sm-8" data-toggle="collapse" href="#AccordionOne"><h3>Le Club <span class="fas fa-caret-down"></span></h3></a>
 		</div>
 
-		<div class="row">
+		<div class="row collapse show" id="AccordionOne">
 			<div class="offset-sm-2 col-sm-8">
 				<p>Le CHASA, c'est une école de plongée située dans la région du centre (Belgique). Depuis plus de vingt ans, elle forme des plongeurs de tout niveau dans une ambiance agréable et amicale.</p>
 				<p>Les brevets délivrés sont reconnus par fédération belge (FEBRAS) membre fondateur de la CMAS, confédération mondiale des activités subaquatiques.</p>
@@ -23,49 +23,55 @@
 		</div>
 
 		<div class="row">
-			<h3 id="members" class="offset-sm-2 col-sm-8">Les membres</h3>
+			<a class="offset-sm-2 col-sm-8" data-toggle="collapse" href="#AccordionTwo"><h3>Les membres <span class="fas fa-caret-down"></span></h3></a>
 		</div>
-
-		<div class="row">
-			<div class="offset-sm-2 col-sm-4">
-				<figure class="text-center" >
-					<img src="{% static 'web_app/Images/president.jpg' %}" class="img-thumbnail" width="125" height="190" alt="Photo du Président">
-					<figcaption>Le <strong>Président</strong> : <em>Jacques Degrèves</em></figcaption>
-				</figure>
-			</div>
-			<div class="col-sm-4">
-				<figure class="text-center" >
-					<img src="{% static 'web_app/Images/vice_president.jpg' %}" class="img-thumbnail" width="125" height="190" alt="Photo du Vice-Président">
-					<figcaption>Le <strong>Vice-Président</strong> : <em>Giulio Lombardo</em></figcaption>
-				</figure>
-			</div>
-		</div>
-		<div class="row">
-			<div class="offset-sm-2 col-sm-4">
-				<figure class="text-center" >
-					<img src="{% static 'web_app/Images/treasurer.jpg' %}" class="img-thumbnail" width="125" height="190" alt="Photo du Trésorier">
-					<figcaption>Le <strong>Trésorier</strong> : <em>Vincent Bardiaux</em></figcaption>
-				</figure>
-			</div>
-			<div class="col-sm-4">
-				<figure class="text-center" >
-					<img src="{% static 'web_app/Images/secretary.jpg' %}" class="img-thumbnail" width="125" height="190" alt="Photo de la Secrétaire">
-					<figcaption>La <strong>Secrétaire</strong> : <em>Stéphanie Matten</em></figcaption>
-				</figure>
-			</div>
-		</div>
-		<div class="row">
-			<div class="offset-sm-2 col-sm-4">
-				<figure class="text-center bottom-page" >
-					<img src="{% static 'web_app/Images/kevin.jpg' %}" class="img-thumbnail" width="125" height="190" alt="Photo de Kevin">
-					<figcaption>Le <strong>Comité des fêtes</strong> : <em>Kevin Nalinne</em></figcaption>
-				</figure>
-			</div>
-			<div class="col-sm-4">
-				<figure class="text-center bottom-page" >
-					<img src="{% static 'web_app/Images/sarah.jpg' %}" class="img-thumbnail" width="125" height="190" alt="Photo de Sarah">
-					<figcaption>Le <strong>Comité des fêtes</strong> : <em>Sarah Foulon</em></figcaption>
-				</figure>
+		
+		<div class="collapse show" id="AccordionTwo">
+			<div class="row">
+				<div class="offset-sm-2 col-sm-8">
+					<div class="row">
+						<div class="col-sm-6">
+							<figure class="text-center" >
+								<img src="{% static 'web_app/Images/president.jpg' %}" class="img-thumbnail" width="125" height="190" alt="Photo du Président">
+								<figcaption>Le <strong>Président</strong> : <em>Jacques Degrèves</em></figcaption>
+							</figure>
+						</div>
+						<div class="col-sm-6">
+							<figure class="text-center" >
+								<img src="{% static 'web_app/Images/vice_president.jpg' %}" class="img-thumbnail" width="125" height="190" alt="Photo du Vice-Président">
+								<figcaption>Le <strong>Vice-Président</strong> : <em>Giulio Lombardo</em></figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<figure class="text-center" >
+								<img src="{% static 'web_app/Images/treasurer.jpg' %}" class="img-thumbnail" width="125" height="190" alt="Photo du Trésorier">
+								<figcaption>Le <strong>Trésorier</strong> : <em>Vincent Bardiaux</em></figcaption>
+							</figure>
+						</div>
+						<div class="col-sm-6">
+							<figure class="text-center" >
+								<img src="{% static 'web_app/Images/secretary.jpg' %}" class="img-thumbnail" width="125" height="190" alt="Photo de la Secrétaire">
+								<figcaption>La <strong>Secrétaire</strong> : <em>Stéphanie Matten</em></figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<figure class="text-center bottom-page" >
+								<img src="{% static 'web_app/Images/kevin.jpg' %}" class="img-thumbnail" width="125" height="190" alt="Photo de Kevin">
+								<figcaption>Le <strong>Comité des fêtes</strong> : <em>Kevin Nalinne</em></figcaption>
+							</figure>
+						</div>
+						<div class="col-sm-6">
+							<figure class="text-center bottom-page" >
+								<img src="{% static 'web_app/Images/sarah.jpg' %}" class="img-thumbnail" width="125" height="190" alt="Photo de Sarah">
+								<figcaption>Le <strong>Comité des fêtes</strong> : <em>Sarah Foulon</em></figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
