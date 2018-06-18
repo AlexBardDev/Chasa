@@ -3,7 +3,7 @@ $("#navbarDropdown2").on("mouseover", function () {
 	$(".dropdown-menu").show();
 });
 
-$("#navbarDropdown2").on("mouseout", function () {
+$("#navbarDropdown2").on("mouseleave", function () {
 	$(".dropdown-menu").hide();
 });
 
@@ -11,7 +11,7 @@ $(".dropdown-menu").on("mouseover", function () {
 	$(this).show();
 });
 
-$(".dropdown-menu").on("mouseout", function () {
+$(".dropdown-menu").on("mouseleave", function () {
 	$(this).hide();
 });
 

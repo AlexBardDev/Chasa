@@ -35,6 +35,11 @@ header
 	color: white;
 }
 
+.dropdown-menu
+{
+	margin-top: -1px;
+}
+
 /* Modal */
 
 #modal
