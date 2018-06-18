@@ -1,3 +1,20 @@
+/* Hovering on the menu */
+$("#navbarDropdown2").on("mouseover", function () {
+	$(".dropdown-menu").show();
+});
+
+$("#navbarDropdown2").on("mouseout", function () {
+	$(".dropdown-menu").hide();
+});
+
+$(".dropdown-menu").on("mouseover", function () {
+	$(this).show();
+});
+
+$(".dropdown-menu").on("mouseout", function () {
+	$(this).hide();
+});
+
 /* Enable tooltips */
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
