@@ -1,8 +1,12 @@
+"""
+This script contains all the tests for this project.
+"""
+#Import libraries
 from django.test import TestCase
 from django.urls import reverse
 
 class ViewsTests(TestCase):
-    """This class contains all the tests for the views of this app."""
+    """This class contains all the unit tests for the views of this app."""
 
     def test_home(self):
         """This method tests the 'home' view."""

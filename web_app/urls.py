@@ -1,4 +1,7 @@
-#Local library
+"""
+This script contains the urls form my app.
+"""
+#Import libraries
 from django.urls import path
 from . import views
 

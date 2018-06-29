@@ -1,6 +1,8 @@
+"""
+This script contains the models used by 'web_app'.
+"""
+#Import libraries
 from django.db import models
-
-# Create your models here.
 
 class Places(models.Model):
     """This class contains all about the places."""

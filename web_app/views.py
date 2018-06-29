@@ -1,7 +1,9 @@
+"""
+This script contains all the views.
+"""
+#Import libraries
 from django.shortcuts import render
 from .models import DivingEvents
-
-# Create your views here.
 
 def home(request):
     """This view returns the home page."""

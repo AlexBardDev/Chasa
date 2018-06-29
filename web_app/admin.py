@@ -1,7 +1,9 @@
+"""
+This script customizes the admin interface.
+"""
+#Import libraries
 from django.contrib import admin
 from .models import Places, PersonInChargeOf, DivingEvents
-
-# Register your models here.
 
 class PlacesAdmin(admin.ModelAdmin):
     """This class customizes the admin interface for the 'Places' table."""
@@ -14,7 +16,7 @@ admin.site.register(Places, PlacesAdmin)
 class PersonInChargeOfAdmin(admin.ModelAdmin):
     """This class customizes the admin interface for the 'PersonInChargeOf'
     table."""
-    
+
     list_filter = ('name',)
     search_fields = ('name',)
 
